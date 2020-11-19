@@ -51,7 +51,7 @@ def scrape_that_page():
 
     # write html to file
     html = final_df.to_html(index=False)
-    text_file = open("redditposts.html", "w")
+    text_file = open("static/redditposts.html", "w")
     text_file.write(html)
     text_file.close()
 

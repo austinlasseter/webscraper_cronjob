@@ -55,14 +55,6 @@ def scrape_that_page():
     text_file.write(html)
     text_file.close()
 
-    #  print contents of log file to html table
-    with open('/var/log/syslog') as f: s = f.read()
-    u = pd.DataFrame([s[-275:]])
-    loghtml = u.to_html(index=False)
-    text_file = open("static/log.html", "w")
-    text_file.write(loghtml)
-    text_file.close()
-
 
 
 
